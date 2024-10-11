@@ -1,0 +1,28 @@
+CREATE GLOBAL CUBE [PROYECTO1]
+Storage 'C:\Users\Administrator\Documents\Cubes\PROYECTO1.cub'
+FROM [CUBE_El_Ajedrecista]
+(
+measure [CUBE_El_Ajedrecista].[c Cantidad Producto],
+measure [CUBE_El_Ajedrecista].[c Count],
+measure [CUBE_El_Ajedrecista].[c Pct Descuento],
+measure [CUBE_El_Ajedrecista].[c Total],
+measure [CUBE_El_Ajedrecista].[Fact Cotizacion Count],
+measure [CUBE_El_Ajedrecista].[f Cantidad Producto],
+measure [CUBE_El_Ajedrecista].[f Count],
+measure [CUBE_El_Ajedrecista].[f Descuento],
+measure [CUBE_El_Ajedrecista].[f Impuesto],
+measure [CUBE_El_Ajedrecista].[f Precio Producto],
+measure [CUBE_El_Ajedrecista].[f Sub Total],
+measure [CUBE_El_Ajedrecista].[f Total],
+measure [CUBE_El_Ajedrecista].[Fact Facturacion Count],
+------------------------------------
+dimension [CUBE_El_Ajedrecista].[Dim Articulo],
+dimension [CUBE_El_Ajedrecista].[Dim Cliente],
+dimension [CUBE_El_Ajedrecista].[Dim Condicion Pago],
+dimension [CUBE_El_Ajedrecista].[Dim Embarque],
+dimension [CUBE_El_Ajedrecista].[Dim Moneda],
+dimension [CUBE_El_Ajedrecista].[Dim Sub Cot],
+dimension [CUBE_El_Ajedrecista].[Dim Sub Fact],
+dimension [CUBE_El_Ajedrecista].[Dim Time],
+dimension [CUBE_El_Ajedrecista].[Dim Vendedor]
+)
